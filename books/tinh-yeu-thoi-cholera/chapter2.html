@@ -1,135 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chương 2: Những bức thư không gửi đi — Tình Yêu Thời Thổ Tả. Đào Vị Quất." />
-  <title>Ch.2 Những bức thư không gửi đi — Tình Yêu Thời Thổ Tả — Đào Vị Quất</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../assets/styles/main.css" />
-  <link rel="stylesheet" href="../../assets/styles/reader.css" />
-</head>
-<body class="reader-body">
-
-  <!-- Reader Header -->
-  <header class="reader-header">
-    <div class="reader-header-left">
-      <a href="index.html" class="reader-back-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-        Về sách
-      </a>
-      <span class="reader-breadcrumb">Tình Yêu Thời Thổ Tả · <span>Chương 2</span></span>
-    </div>
-    <div class="reader-header-right">
-      <button class="reader-settings-btn" id="settingsBtn" title="Cài đặt" aria-label="Cài đặt">⚙</button>
-      <a href="../../index.html" class="reader-back-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Trang chủ
-      </a>
-    </div>
-  </header>
-
-  <div class="reader-progress">
-    <div class="reader-progress-fill" id="progressFill"></div>
-  </div>
-
-  <!-- Settings Panel -->
-  <div class="settings-panel" id="settingsPanel">
-    <div class="settings-title">Tùy chỉnh đọc</div>
-    <div class="settings-group">
-      <div class="settings-label">Cỡ chữ <span id="fontSizeDisplay">18px</span></div>
-      <input type="range" class="settings-slider" id="fontSizeSlider" min="14" max="24" value="18" step="1" />
-    </div>
-    <div class="settings-group">
-      <div class="settings-label">Giãn dòng <span id="lineHeightDisplay">1.85</span></div>
-      <input type="range" class="settings-slider" id="lineHeightSlider" min="1.4" max="2.2" value="1.85" step="0.05" />
-    </div>
-    <div class="settings-group">
-      <div class="settings-label">Nền trang</div>
-      <div class="theme-buttons">
-        <button class="theme-btn active" data-theme="light">Sáng</button>
-        <button class="theme-btn sepia" data-theme="sepia">Sepia</button>
-        <button class="theme-btn dark" data-theme="dark">Tối</button>
-      </div>
-    </div>
-  </div>
-
-  <main class="reader-main">
-    <div class="reader-container">
-
-      <header class="chapter-header">
-        <div class="chapter-book-name">Tình Yêu Thời Thổ Tả</div>
-        <div class="chapter-number-label">Chương Hai</div>
-        <h1 class="chapter-title">Những bức thư không gửi đi</h1>
-      </header>
-
-      <div class="chapter-body">
-
-        <p>Florentino Ariza viết thư cho Fermina Daza suốt ba năm, sau ngày nàng rời đi theo cha. Không bức nào được gửi đi. Không phải vì chàng không biết địa chỉ — thực ra chàng biết rất rõ, vì chú của chàng làm việc ở bưu điện và đã lần theo đường đi của gia đình Daza đến tận tỉnh lẻ hẻo lánh nơi Lorenzo Daza đã đưa con gái đi trốn tình yêu. Mà là vì Florentino tin rằng mỗi bức thư gửi đi là một phần tình yêu bị mất đi vĩnh viễn.</p>
-
-        <p>Những bức thư ấy chồng chất trong một chiếc hộp thiếc sơn đỏ mà chàng khóa cẩn thận dưới gầm giường, trong căn phòng nhỏ của nhà trọ số 3 đường Ventanas. Chàng viết mỗi đêm, sau khi trở về từ bưu điện, dưới ánh đèn dầu leo lét, tay chàng run run nhưng chữ viết lại bình tĩnh một cách kỳ lạ — như thể tình yêu đã biến chàng thành một con người khác khi cầm bút.</p>
-
-        <div class="chapter-divider">✦ ✦ ✦</div>
-
-        <p>Mẹ chàng — bà Tránsito Ariza, người phụ nữ bán hàng rong với đôi bàn tay chai sần và đôi mắt sắc sảo — nhận ra ngay từ đầu dấu hiệu của chứng bệnh tình. Bà không la mắng, không than thở. Bà chỉ đặt lên bàn trước mặt con trai một bát súp gà nóng hổi mỗi tối, với niềm tin rằng súp gà chữa được mọi thứ đau khổ của tâm hồn lẫn thể xác.</p>
-
-        <p>"Con đang chết," Florentino nói với mẹ một buổi tối, không phải như một lời than thở mà như một sự thông báo bình thản.</p>
-
-        <p>Bà Tránsito không ngẩng đầu lên khỏi nồi súp, chỉ trả lời: "Không có ai chết vì tình yêu."</p>
-
-        <p>Bà sai. Hay ít nhất là bà không hoàn toàn đúng. Florentino không chết, nhưng chàng sống trong một trạng thái lửng lơ kỳ lạ, nửa tỉnh nửa mê, nơi mọi thứ đều có màu của Fermina Daza. Mùi hoa nhài ngoài cửa sổ — là mùi tóc nàng. Tiếng mưa gõ trên mái tôn — là nhịp bước của nàng. Chàng ăn nhưng không nếm được vị. Chàng ngủ nhưng không thực sự ngủ. Chàng sống nhưng không thực sự sống.</p>
-
-        <div class="chapter-divider">✦ ✦ ✦</div>
-
-        <p>Mười tám tháng sau, gia đình Daza trở về thành phố. Lorenzo Daza nhận ra rằng việc trốn chạy không giải quyết được gì — con gái ông càng ngày càng trở nên lạnh lùng và xa cách, và điều đó còn đáng sợ hơn cả tình yêu của một gã trai trẻ bưu điện.</p>
-
-        <p>Fermina về. Florentino biết được từ người anh họ bán báo ở góc phố. Chàng không ngủ cả đêm hôm đó. Sáng sớm tinh mơ, chàng đã đứng ở góc phố đối diện với ngôi nhà của nàng, trong bộ quần áo duy nhất được ủi thẳng thớm mà chàng có, tay cầm bó hoa violet màu tím mà chàng đã mua từ đêm hôm trước và giữ trong xô nước suốt đêm để giữ tươi.</p>
-
-        <p>Fermina xuất hiện vào lúc chín giờ sáng, đi theo cô hộ lý già quen thuộc, trông cao hơn trước và điềm tĩnh hơn trước — như thể cuộc sống ở tỉnh lẻ đã cất đi khỏi nàng một cái gì đó mà nàng không cần nữa. Nàng nhìn thấy Florentino ngay lập tức, vì chàng đứng đúng chỗ ánh nắng sáng nhất. Và trong khoảnh khắc mắt họ gặp nhau, Fermina dừng lại.</p>
-
-        <p>Florentino nghĩ tim chàng sắp vỡ tan vì hạnh phúc.</p>
-
-        <p>Nhưng Fermina nhìn chàng chỉ trong ba giây — đủ lâu để chàng nhận ra đây không phải cái nhìn của một người đang xúc động — rồi quay đi và tiếp tục bước đi, không ngoảnh lại.</p>
-
-        <div class="chapter-divider">✦ ✦ ✦</div>
-
-        <p>Đêm hôm đó, Florentino mở chiếc hộp thiếc ra và đọc lại từng bức thư. Đọc xong, chàng đốt tất cả. Không phải vì hết yêu. Mà vì chàng hiểu ra rằng, tình yêu thực sự không cần đến chứng nhân.</p>
-
-        <p>Chàng lấy tờ giấy mới và bắt đầu viết bức thư đầu tiên của một kỷ nguyên mới — bức thư mà chàng biết sẽ không bao giờ gửi đi, nhưng cũng sẽ không bao giờ đốt. Chàng viết: <em>"Tôi sẽ chờ em, dù phải mất cả đời."</em></p>
-
-        <p>Và đó không phải một lời hứa lãng mạn của tuổi mười bảy. Đó là một lời thề mà người ta thường thề khi đã hiểu rằng thời gian không phải là kẻ thù của tình yêu — thời gian chỉ là cái bàn sàng mà tình yêu thật sự sẽ vượt qua.</p>
-
-        <p>Florentino Ariza sẽ chờ. Năm mươi mốt năm, chín tháng, và bốn ngày.</p>
-
-      </div>
-
-      <!-- Chapter Navigation -->
-      <nav class="chapter-nav" aria-label="Điều hướng chương">
-        <a href="chapter1.html" class="chapter-nav-link prev">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          <div>
-            <span class="chapter-nav-label">Chương trước</span>
-            <span class="chapter-nav-title">Mùi hạnh nhân đắng</span>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chương 2: Những bức thư không gửi đi — Cam tâm thuần phục. Đào Vị Quất."
+    />
+    <title>
+      Ch.2 Những bức thư không gửi đi — Cam tâm thuần phục — Đào Vị Quất
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
+    <link rel="stylesheet" href="../../assets/styles/reader.css" />
+  </head>
+  <body class="reader-body">
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <div class="reader-header-left">
+        <a href="index.html" class="reader-back-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+          Về sách
         </a>
+        <span class="reader-breadcrumb"
+          >Cam tâm thuần phục · <span>Chương 2</span></span
+        >
+      </div>
+      <div class="reader-header-right">
+        <button
+          class="reader-settings-btn"
+          id="settingsBtn"
+          title="Cài đặt"
+          aria-label="Cài đặt"
+        >
+          ⚙
+        </button>
+        <a href="../../index.html" class="reader-back-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          Trang chủ
+        </a>
+      </div>
+    </header>
 
-        <div class="chapter-nav-home">
-          <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            <span>Mục lục sách</span>
-          </a>
-        </div>
-
-        <div style="text-align:right;">
-          <span style="font-family: var(--font-ui); font-size: 0.78rem; color: var(--reader-mute); font-style: italic;">Chương tiếp theo sắp ra mắt...</span>
-        </div>
-      </nav>
-
+    <div class="reader-progress">
+      <div class="reader-progress-fill" id="progressFill"></div>
     </div>
-  </main>
 
-  <script src="../../assets/scripts/reader.js"></script>
-</body>
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settingsPanel">
+      <div class="settings-title">Tùy chỉnh đọc</div>
+      <div class="settings-group">
+        <div class="settings-label">
+          Cỡ chữ <span id="fontSizeDisplay">18px</span>
+        </div>
+        <input
+          type="range"
+          class="settings-slider"
+          id="fontSizeSlider"
+          min="14"
+          max="24"
+          value="18"
+          step="1"
+        />
+      </div>
+      <div class="settings-group">
+        <div class="settings-label">
+          Giãn dòng <span id="lineHeightDisplay">1.85</span>
+        </div>
+        <input
+          type="range"
+          class="settings-slider"
+          id="lineHeightSlider"
+          min="1.4"
+          max="2.2"
+          value="1.85"
+          step="0.05"
+        />
+      </div>
+      <div class="settings-group">
+        <div class="settings-label">Nền trang</div>
+        <div class="theme-buttons">
+          <button class="theme-btn active" data-theme="light">Sáng</button>
+          <button class="theme-btn sepia" data-theme="sepia">Sepia</button>
+          <button class="theme-btn dark" data-theme="dark">Tối</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="reader-main">
+      <div class="reader-container">
+        <header class="chapter-header">
+          <div class="chapter-book-name">Cam tâm thuần phục</div>
+          <div class="chapter-number-label">Chương Hai</div>
+          <h1 class="chapter-title">Những bức thư không gửi đi</h1>
+        </header>
+
+        <div class="chapter-body">
+          <p>
+            Florentino Ariza viết thư cho Fermina Daza suốt ba năm, sau ngày
+            nàng rời đi theo cha. Không bức nào được gửi đi. Không phải vì chàng
+            không biết địa chỉ — thực ra chàng biết rất rõ, vì chú của chàng làm
+            việc ở bưu điện và đã lần theo đường đi của gia đình Daza đến tận
+            tỉnh lẻ hẻo lánh nơi Lorenzo Daza đã đưa con gái đi trốn tình yêu.
+            Mà là vì Florentino tin rằng mỗi bức thư gửi đi là một phần tình yêu
+            bị mất đi vĩnh viễn.
+          </p>
+
+          <p>
+            Những bức thư ấy chồng chất trong một chiếc hộp thiếc sơn đỏ mà
+            chàng khóa cẩn thận dưới gầm giường, trong căn phòng nhỏ của nhà trọ
+            số 3 đường Ventanas. Chàng viết mỗi đêm, sau khi trở về từ bưu điện,
+            dưới ánh đèn dầu leo lét, tay chàng run run nhưng chữ viết lại bình
+            tĩnh một cách kỳ lạ — như thể tình yêu đã biến chàng thành một con
+            người khác khi cầm bút.
+          </p>
+
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Mẹ chàng — bà Tránsito Ariza, người phụ nữ bán hàng rong với đôi bàn
+            tay chai sần và đôi mắt sắc sảo — nhận ra ngay từ đầu dấu hiệu của
+            chứng bệnh tình. Bà không la mắng, không than thở. Bà chỉ đặt lên
+            bàn trước mặt con trai một bát súp gà nóng hổi mỗi tối, với niềm tin
+            rằng súp gà chữa được mọi thứ đau khổ của tâm hồn lẫn thể xác.
+          </p>
+
+          <p>
+            "Con đang chết," Florentino nói với mẹ một buổi tối, không phải như
+            một lời than thở mà như một sự thông báo bình thản.
+          </p>
+
+          <p>
+            Bà Tránsito không ngẩng đầu lên khỏi nồi súp, chỉ trả lời: "Không có
+            ai chết vì tình yêu."
+          </p>
+
+          <p>
+            Bà sai. Hay ít nhất là bà không hoàn toàn đúng. Florentino không
+            chết, nhưng chàng sống trong một trạng thái lửng lơ kỳ lạ, nửa tỉnh
+            nửa mê, nơi mọi thứ đều có màu của Fermina Daza. Mùi hoa nhài ngoài
+            cửa sổ — là mùi tóc nàng. Tiếng mưa gõ trên mái tôn — là nhịp bước
+            của nàng. Chàng ăn nhưng không nếm được vị. Chàng ngủ nhưng không
+            thực sự ngủ. Chàng sống nhưng không thực sự sống.
+          </p>
+
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Mười tám tháng sau, gia đình Daza trở về thành phố. Lorenzo Daza
+            nhận ra rằng việc trốn chạy không giải quyết được gì — con gái ông
+            càng ngày càng trở nên lạnh lùng và xa cách, và điều đó còn đáng sợ
+            hơn cả tình yêu của một gã trai trẻ bưu điện.
+          </p>
+
+          <p>
+            Fermina về. Florentino biết được từ người anh họ bán báo ở góc phố.
+            Chàng không ngủ cả đêm hôm đó. Sáng sớm tinh mơ, chàng đã đứng ở góc
+            phố đối diện với ngôi nhà của nàng, trong bộ quần áo duy nhất được
+            ủi thẳng thớm mà chàng có, tay cầm bó hoa violet màu tím mà chàng đã
+            mua từ đêm hôm trước và giữ trong xô nước suốt đêm để giữ tươi.
+          </p>
+
+          <p>
+            Fermina xuất hiện vào lúc chín giờ sáng, đi theo cô hộ lý già quen
+            thuộc, trông cao hơn trước và điềm tĩnh hơn trước — như thể cuộc
+            sống ở tỉnh lẻ đã cất đi khỏi nàng một cái gì đó mà nàng không cần
+            nữa. Nàng nhìn thấy Florentino ngay lập tức, vì chàng đứng đúng chỗ
+            ánh nắng sáng nhất. Và trong khoảnh khắc mắt họ gặp nhau, Fermina
+            dừng lại.
+          </p>
+
+          <p>Florentino nghĩ tim chàng sắp vỡ tan vì hạnh phúc.</p>
+
+          <p>
+            Nhưng Fermina nhìn chàng chỉ trong ba giây — đủ lâu để chàng nhận ra
+            đây không phải cái nhìn của một người đang xúc động — rồi quay đi và
+            tiếp tục bước đi, không ngoảnh lại.
+          </p>
+
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Đêm hôm đó, Florentino mở chiếc hộp thiếc ra và đọc lại từng bức
+            thư. Đọc xong, chàng đốt tất cả. Không phải vì hết yêu. Mà vì chàng
+            hiểu ra rằng, tình yêu thực sự không cần đến chứng nhân.
+          </p>
+
+          <p>
+            Chàng lấy tờ giấy mới và bắt đầu viết bức thư đầu tiên của một kỷ
+            nguyên mới — bức thư mà chàng biết sẽ không bao giờ gửi đi, nhưng
+            cũng sẽ không bao giờ đốt. Chàng viết:
+            <em>"Tôi sẽ chờ em, dù phải mất cả đời."</em>
+          </p>
+
+          <p>
+            Và đó không phải một lời hứa lãng mạn của tuổi mười bảy. Đó là một
+            lời thề mà người ta thường thề khi đã hiểu rằng thời gian không phải
+            là kẻ thù của tình yêu — thời gian chỉ là cái bàn sàng mà tình yêu
+            thật sự sẽ vượt qua.
+          </p>
+
+          <p>
+            Florentino Ariza sẽ chờ. Năm mươi mốt năm, chín tháng, và bốn ngày.
+          </p>
+        </div>
+
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav" aria-label="Điều hướng chương">
+          <a href="chapter1.html" class="chapter-nav-link prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+            <div>
+              <span class="chapter-nav-label">Chương trước</span>
+              <span class="chapter-nav-title">Mùi hạnh nhân đắng</span>
+            </div>
+          </a>
+
+          <div class="chapter-nav-home">
+            <a href="index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+              <span>Mục lục sách</span>
+            </a>
+          </div>
+
+          <div style="text-align: right">
+            <span
+              style="
+                font-family: var(--font-ui);
+                font-size: 0.78rem;
+                color: var(--reader-mute);
+                font-style: italic;
+              "
+              >Chương tiếp theo sắp ra mắt...</span
+            >
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <script src="../../assets/scripts/reader.js"></script>
+  </body>
 </html>
