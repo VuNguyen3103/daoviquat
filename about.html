@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Giới thiệu về Đào Vị Quất — nền tảng dịch thuật văn học thế giới sang tiếng Việt."
+    />
+    <title>Giới thiệu — Đào Vị Quất</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <style>
+      /* ── Page-specific styles ── */
+      .about-page-hero {
+        margin-top: 68px;
+        padding: var(--space-4xl) var(--space-xl);
+        background: linear-gradient(160deg, var(--pink-50) 0%, white 60%);
+        border-bottom: 1px solid var(--pink-100);
+        text-align: center;
+      }
+
+      .about-page-hero .section-title {
+        max-width: 560px;
+        margin: 0 auto var(--space-md);
+      }
+
+      .about-page-hero .section-subtitle {
+        font-style: italic;
+      }
+
+      /* Mission section */
+      .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-xl);
+      }
+
+      .mission-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: var(--space-2xl);
+        border: 1px solid var(--pink-100);
+        text-align: center;
+        transition:
+          transform 0.3s var(--ease-spring),
+          box-shadow 0.3s;
+      }
+
+      .mission-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .mission-icon {
+        font-size: 2.4rem;
+        margin-bottom: var(--space-lg);
+      }
+
+      .mission-title {
+        font-family: var(--font-serif);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: var(--space-sm);
+      }
+
+      .mission-text {
+        font-family: var(--font-body);
+        font-size: 0.88rem;
+        color: var(--text-soft);
+        line-height: 1.7;
+      }
+
+      /* Story section */
+      .story-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4xl);
+        align-items: center;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .story-text h2 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 700;
+        color: var(--text-dark);
+        line-height: 1.2;
+        margin-bottom: var(--space-lg);
+      }
+
+      .story-text p {
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        color: var(--text-mid);
+        line-height: 1.85;
+        margin-bottom: var(--space-lg);
+      }
+
+      .story-text p:last-child {
+        margin-bottom: 0;
+      }
+
+      .story-visual {
+        background: linear-gradient(
+          135deg,
+          var(--pink-100) 0%,
+          var(--pink-200) 50%,
+          var(--pink-300) 100%
+        );
+        border-radius: var(--radius-xl);
+        aspect-ratio: 4/5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .story-visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 30% 40%,
+          rgba(255, 255, 255, 0.4) 0%,
+          transparent 60%
+        );
+      }
+
+      /* Values */
+      .values-list {
+        max-width: 720px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+      }
+
+      .value-item {
+        display: flex;
+        gap: var(--space-xl);
+        align-items: flex-start;
+        padding: var(--space-xl);
+        background: white;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--pink-100);
+        transition: border-color 0.25s;
+      }
+
+      .value-item:hover {
+        border-color: var(--pink-300);
+      }
+
+      .value-number {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--pink-300);
+        line-height: 1;
+        flex-shrink: 0;
+        width: 40px;
+      }
+
+      .value-content-title {
+        font-family: var(--font-serif);
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: var(--space-xs);
+      }
+
+      .value-content-text {
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        color: var(--text-soft);
+        line-height: 1.7;
+      }
+
+      /* Join CTA */
+      .join-section {
+        text-align: center;
+        padding: var(--space-4xl) var(--space-xl);
+        background: var(--pink-50);
+      }
+
+      .join-section .section-title {
+        margin-bottom: var(--space-md);
+      }
+
+      .join-section p {
+        font-family: var(--font-body);
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--text-soft);
+        max-width: 480px;
+        margin: 0 auto var(--space-xl);
+        line-height: 1.7;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .mission-grid {
+          grid-template-columns: 1fr;
+        }
+        .story-layout {
+          grid-template-columns: 1fr;
+        }
+        .story-visual {
+          aspect-ratio: 3/2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🍑</div>
+        <span class="nav-logo-text">Đào Vị Quất</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="library.html">Thư viện sách</a>
+        <a href="about.html" class="active">Giới thiệu</a>
+      </div>
+      <div class="nav-search">
+        <div class="search-input-wrap">
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <input type="text" placeholder="Tìm kiếm sách..." />
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Hero -->
+    <div class="about-page-hero">
+      <div class="section-eyebrow">Về chúng tôi</div>
+      <h1 class="section-title">Đào Vị Quất là gì?</h1>
+      <p class="section-subtitle" style="max-width: 520px; margin: 0 auto">
+        Một nhóm những người yêu sách, yêu tiếng Việt, và tin rằng văn học tốt
+        đẹp không nên bị giới hạn bởi ngôn ngữ.
+      </p>
+    </div>
+
+    <!-- Mission cards -->
+    <section class="section">
+      <div class="container">
+        <div class="mission-grid">
+          <div class="mission-card fade-in">
+            <div class="mission-icon">📖</div>
+            <h3 class="mission-title">Dịch thuật với trái tim</h3>
+            <p class="mission-text">
+              Mỗi bản dịch là một tác phẩm riêng — chúng tôi không chỉ chuyển
+              ngữ, mà còn cố gắng truyền đạt linh hồn của văn bản gốc.
+            </p>
+          </div>
+          <div class="mission-card fade-in" data-delay="0.08">
+            <div class="mission-icon">🌍</div>
+            <h3 class="mission-title">Văn học không biên giới</h3>
+            <p class="mission-text">
+              Từ Mỹ Latinh đến châu Âu, từ châu Á đến Trung Đông — chúng tôi
+              mang những tiếng nói đa dạng nhất đến với độc giả Việt.
+            </p>
+          </div>
+          <div class="mission-card fade-in" data-delay="0.16">
+            <div class="mission-icon">✨</div>
+            <h3 class="mission-title">Miễn phí hoàn toàn</h3>
+            <p class="mission-text">
+              Tất cả tác phẩm trên Đào Vị Quất đều miễn phí. Văn học là di sản
+              chung của nhân loại và nên được tiếp cận rộng rãi nhất có thể.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="story-layout">
+          <div class="story-visual fade-in">🍑</div>
+          <div class="story-text fade-in" data-delay="0.1">
+            <h2>Tại sao lại là "Đào Vị Quất"?</h2>
+            <p>
+              Tên của chúng tôi kết hợp ba loại quả với ba ý nghĩa riêng:
+              <em>Đào</em> — vẻ đẹp mong manh và ngọt ngào, như văn chương lúc
+              đầu chạm đến trái tim. <em>Vị</em> — hương vị, cái khoái cảm của
+              một câu văn được viết đúng chỗ. <em>Quất</em> — vị đắng nhẹ còn
+              lại sau khi đọc xong, cái dư vị khiến ta muốn đọc lại.
+            </p>
+            <p>
+              Chúng tôi bắt đầu từ năm 2023, khi một nhóm bạn bè nhận ra rằng có
+              rất nhiều tác phẩm văn học đặc sắc mà độc giả Việt chưa được tiếp
+              cận — không phải vì không có nhu cầu, mà vì chưa có ai dịch.
+            </p>
+            <p>Và thế là chúng tôi bắt đầu dịch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section section-pink">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Nguyên tắc</div>
+          <h2 class="section-title">Những điều chúng tôi tin</h2>
+        </div>
+        <div class="values-list">
+          <div class="value-item fade-in" data-delay="0.05">
+            <div class="value-number">01</div>
+            <div>
+              <div class="value-content-title">Trung thành với nguyên bản</div>
+              <p class="value-content-text">
+                Chúng tôi không cắt bỏ, không thêm thắt. Một bản dịch tốt phải
+                tôn trọng ý định của tác giả gốc — kể cả những đoạn khó dịch
+                nhất.
+              </p>
+            </div>
+          </div>
+          <div class="value-item fade-in" data-delay="0.1">
+            <div class="value-number">02</div>
+            <div>
+              <div class="value-content-title">Tiếng Việt đẹp và tự nhiên</div>
+              <p class="value-content-text">
+                Bản dịch phải đọc như một tác phẩm tiếng Việt thực sự — không
+                cứng nhắc, không ngoại lai, không đọc như đã chạy qua máy dịch.
+              </p>
+            </div>
+          </div>
+          <div class="value-item fade-in" data-delay="0.15">
+            <div class="value-number">03</div>
+            <div>
+              <div class="value-content-title">Minh bạch với độc giả</div>
+              <p class="value-content-text">
+                Chúng tôi luôn ghi rõ tên dịch giả, ngôn ngữ gốc và năm xuất
+                bản. Công nhận công sức của người dịch là điều hiển nhiên, không
+                phải tùy chọn.
+              </p>
+            </div>
+          </div>
+          <div class="value-item fade-in" data-delay="0.2">
+            <div class="value-number">04</div>
+            <div>
+              <div class="value-content-title">Cộng đồng đọc sách</div>
+              <p class="value-content-text">
+                Đào Vị Quất không chỉ là nơi đọc — mà là nơi người yêu sách gặp
+                nhau, thảo luận và cùng nhau khám phá văn học thế giới.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join CTA -->
+    <div class="join-section">
+      <div class="section-eyebrow">Tham gia cùng chúng tôi</div>
+      <h2 class="section-title">Bạn có muốn đóng góp không?</h2>
+      <p>
+        Nếu bạn biết ngoại ngữ và yêu văn học, chúng tôi luôn chào đón những
+        người dịch mới. Không cần bằng cấp — chỉ cần đam mê và sự cẩn thận.
+      </p>
+      <div
+        style="
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <a href="library.html" class="btn btn-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path
+              d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+            />
+          </svg>
+          Khám phá thư viện
+        </a>
+        <a href="mailto:daoviquat@example.com" class="btn btn-secondary"
+          >Liên hệ chúng tôi</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand-name">🍑 Đào Vị Quất</div>
+            <p class="footer-brand-desc">
+              Nơi những cuốn sách được tái sinh qua ngôn ngữ — một cộng đồng
+              dịch thuật văn học với trái tim.
+            </p>
+          </div>
+          <div>
+            <div class="footer-col-title">Điều hướng</div>
+            <nav class="footer-links">
+              <a href="index.html">Trang chủ</a>
+              <a href="library.html">Thư viện sách</a>
+              <a href="about.html">Giới thiệu</a>
+            </nav>
+          </div>
+          <div>
+            <div class="footer-col-title">Thư viện</div>
+            <nav class="footer-links">
+              <a href="books/tinh-yeu-thoi-cholera/index.html"
+                >Tình Yêu Thời Thổ Tả</a
+              >
+              <a href="books/nha-gia-kim/index.html">Nhà Giả Kim</a>
+              <a href="books/hoang-tu-be/index.html">Hoàng Tử Bé</a>
+              <a href="books/tram-nam-co-don/index.html">Trăm Năm Cô Đơn</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            © 2026 <span>Đào Vị Quất</span>. Được tạo ra với ❤️ cho những người
+            yêu văn học.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
