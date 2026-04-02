@@ -1,137 +1,676 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chương 1: Mùi hạnh nhân đắng — Tình Yêu Thời Thổ Tả. Đào Vị Quất." />
-  <title>Ch.1 Mùi hạnh nhân đắng — Cam tâm thuần phục — Đào Vị Quất</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../assets/styles/main.css" />
-  <link rel="stylesheet" href="../../assets/styles/reader.css" />
-</head>
-<body class="reader-body">
-
-  <!-- Reader Header -->
-  <header class="reader-header">
-    <div class="reader-header-left">
-      <a href="index.html" class="reader-back-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-        Về sách
-      </a>
-      <span class="reader-breadcrumb">Tình Yêu Thời Thổ Tả · <span>Chương 1</span></span>
-    </div>
-    <div class="reader-header-right">
-      <button class="reader-settings-btn" id="settingsBtn" title="Cài đặt hiển thị" aria-label="Cài đặt">⚙</button>
-      <a href="../../index.html" class="reader-back-btn" style="gap: 4px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Trang chủ
-      </a>
-    </div>
-  </header>
-
-  <!-- Progress Bar -->
-  <div class="reader-progress">
-    <div class="reader-progress-fill" id="progressFill"></div>
-  </div>
-
-  <!-- Settings Panel -->
-  <div class="settings-panel" id="settingsPanel">
-    <div class="settings-title">Tùy chỉnh đọc</div>
-
-    <div class="settings-group">
-      <div class="settings-label">
-        Cỡ chữ <span id="fontSizeDisplay">18px</span>
-      </div>
-      <input type="range" class="settings-slider" id="fontSizeSlider" min="14" max="24" value="18" step="1" />
-    </div>
-
-    <div class="settings-group">
-      <div class="settings-label">
-        Giãn dòng <span id="lineHeightDisplay">1.85</span>
-      </div>
-      <input type="range" class="settings-slider" id="lineHeightSlider" min="1.4" max="2.2" value="1.85" step="0.05" />
-    </div>
-
-    <div class="settings-group">
-      <div class="settings-label">Nền trang</div>
-      <div class="theme-buttons">
-        <button class="theme-btn active" data-theme="light">Sáng</button>
-        <button class="theme-btn sepia" data-theme="sepia">Sepia</button>
-        <button class="theme-btn dark" data-theme="dark">Tối</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Reading Content -->
-  <main class="reader-main">
-    <div class="reader-container">
-
-      <!-- Chapter Header -->
-      <header class="chapter-header">
-        <div class="chapter-book-name">Tình Yêu Thời Thổ Tả</div>
-        <div class="chapter-number-label">Chương Một</div>
-        <h1 class="chapter-title">Mùi hạnh nhân đắng</h1>
-      </header>
-
-      <!-- Chapter Body -->
-      <div class="chapter-body">
-
-        <p>Mùi hạnh nhân đắng luôn gợi cho ông nhớ đến những mối tình trắc trở. Tiến sĩ Juvenal Urbino nhận ra mùi ấy ngay khi bước qua khung cửa nhà Jeremiah de Saint-Amour, dù hơi muộn — ông đến muộn vì con trai ông đã phái người đến báo cái tin buồn qua cách thức lịch sự nhất có thể, chỉ để thấy ông lại bật cười vì cái sự lịch sự ấy.</p>
-
-        <p>Jeremiah de Saint-Amour, người tị nạn từ Antilles, thầy dạy cờ vua dành cho trẻ em và nhiếp ảnh gia vẽ ảnh nghèo nhất trong cả vùng, đã thoát khỏi cuộc sống của mình bằng chứng nhân của chính mình. Ông ta để lại một bức thư cho người bạn tri âm lâu năm là tiến sĩ Juvenal Urbino — người đã phát hiện ra thi thể ngay khi vừa đến nơi, đứng sừng sững trên ngưỡng cửa với chiếc túi da sờn mòn và cây gậy đầu bạc đã bầu bạn cùng ông hơn hai mươi năm nay.</p>
-
-        <div class="chapter-divider">✦ ✦ ✦</div>
-
-        <p>Phòng ảnh nằm ở tầng trệt và phục vụ cả hai mục đích: buổi sáng là cửa hàng, buổi chiều là phòng ngủ riêng. Dù để làm gì, thì cái không khí ẩm mốc cùng mùi hóa chất trong phòng tối cũng làm cho ngôi nhà trở nên khó thở đến nỗi khó tưởng tượng nổi. Vậy mà đây lại là nơi tiến sĩ Urbino đã ở lại lâu nhất trong suốt những năm tháng hành nghề y.</p>
-
-        <p>Ông đã đến đây lần đầu tiên ba mươi năm trước, khi Jeremiah de Saint-Amour còn là người mới đến thành phố này, đến bằng cách nào không ai rõ, với chứng chỉ dạy cờ vua đóng dấu từ một nước nào đó mà tiếng tăm thì nổi nhưng vị trí thì không mấy người xác định được chính xác, và chỉ với mỗi cái chân, cái chân kia đã để lại ở một nơi nào đó bên kia đại dương mà người ta nói với nhiều giọng điệu khác nhau.</p>
-
-        <p>Tiến sĩ Urbino ngồi xuống chiếc ghế đẩu duy nhất trong phòng và đọc bức thư trong khi lính pháo thủ dỡ bỏ lều, vì một buổi trình diễn khinh khí cầu đã bị hủy vào phút chót do thời tiết xấu. Bức thư viết bằng thứ tiếng Pháp tao nhã, điềm tĩnh và thành khẩn, chỉ vẻn vẹn hai trang hai mặt đánh số cẩn thận, không hề có dấu hiệu của sự ân hận hay nỗi thống khổ nào.</p>
-
-        <div class="chapter-divider">✦ ✦ ✦</div>
-
-        <p>Florentino Ariza, ngồi trên chiếc ghế da nứt nẻ ở góc văn phòng bưu điện, biết ngay từ cái nhìn đầu tiên rằng đây là mối tình trọn đời của chàng. Fermina Daza đang đứng dưới ánh nắng buổi sáng ở cổng bưu điện, mặc đồng phục học trò màu trắng sọc đen, và không hề hay biết rằng mình đang được nhìn ngắm. Chàng trai mười bảy tuổi ấy trở nên mất hồn, tim đập loạn và một nỗi ao ước khác thường bỗng trỗi dậy — chàng muốn được đau khổ vì nàng.</p>
-
-        <p>Trong nhiều tuần tiếp theo, Florentino ngồi chờ suốt những giờ làm việc để chỉ được nhìn thấy Fermina một lần mỗi ngày, khi nàng cùng cô hộ lý già đến nhận thư của cha. Chàng đã tập chép tay những bài thơ tình của các nhà thơ lớn, không phải để học nghề thơ mà là để trao cho nàng như một lá thư không gửi được.</p>
-
-        <p>Một buổi chiều, khi chờ đợi như thường lệ, chàng không nhịn được nữa và dúi vào tay Fermina một mảnh giấy gấp tư. Nàng cầm lấy một cách tự nhiên, không hề lộ vẻ ngạc nhiên, giống như đó là việc xảy ra hàng ngày. Đó là bức thư tình đầu tiên mà Florentino Ariza viết trong đời — và ngay sau đó chàng phải chạy trốn khỏi sự bàng hoàng của chính mình.</p>
-
-        <div class="chapter-divider">✦ ✦ ✦</div>
-
-        <p>Trong suốt hai năm dài đằng đẵng trao đổi thư từ bí mật — những bức thư được giấu trong lớp vải lót giày, nhét vào hốc tường, cài vào quyển sách mượn — tình yêu của Florentino lớn dần như một ngọn lửa. Chàng tập viết như một người yêu thực thụ: không phải viết những gì mình cảm thấy, mà viết những gì nàng muốn được nghe.</p>
-
-        <p>Nhưng Lorenzo Daza — cha Fermina — đã phát hiện ra tất cả. Ông ta không nói gì, không đánh đòn, không la hét. Chỉ trong một buổi chiều yên tĩnh, ông đưa cả gia đình lên tàu và đi. Không ai báo cho Florentino biết. Không ai để lại lời giải thích. Và khi chàng đến bưu điện hôm sau, nàng đã biến mất như chưa từng tồn tại.</p>
-
-      </div>
-
-      <!-- Chapter Navigation -->
-      <nav class="chapter-nav" aria-label="Điều hướng chương">
-        <div>
-          <!-- No previous chapter -->
-          <span style="font-family: var(--font-ui); font-size: 0.78rem; color: var(--reader-mute); font-style: italic;">Đây là chương đầu tiên</span>
-        </div>
-
-        <div class="chapter-nav-home">
-          <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            <span>Mục lục sách</span>
-          </a>
-        </div>
-
-        <a href="chapter2.html" class="chapter-nav-link next">
-          <div style="text-align:right;">
-            <span class="chapter-nav-label">Chương tiếp</span>
-            <span class="chapter-nav-title">Những bức thư không gửi đi</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chương 1: Mùi hạnh nhân đắng — Cam tâm thuần phục. Đào Vị Quất."
+    />
+    <title>Ch.1 — Cam tâm thuần phục — Đào Vị Quất</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
+    <link rel="stylesheet" href="../../assets/styles/reader.css" />
+  </head>
+  <body class="reader-body">
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <div class="reader-header-left">
+        <a href="index.html" class="reader-back-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+          Về sách
         </a>
-      </nav>
+        <span class="reader-breadcrumb"
+          >Cam tâm thuần phục · <span>Chương 1</span></span
+        >
+      </div>
+      <div class="reader-header-right">
+        <button
+          class="reader-settings-btn"
+          id="settingsBtn"
+          title="Cài đặt hiển thị"
+          aria-label="Cài đặt"
+        >
+          ⚙
+        </button>
+        <a href="../../index.html" class="reader-back-btn" style="gap: 4px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          Trang chủ
+        </a>
+      </div>
+    </header>
 
+    <!-- Progress Bar -->
+    <div class="reader-progress">
+      <div class="reader-progress-fill" id="progressFill"></div>
     </div>
-  </main>
 
-  <script src="../../assets/scripts/reader.js"></script>
-</body>
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settingsPanel">
+      <div class="settings-title">Tùy chỉnh đọc</div>
+
+      <div class="settings-group">
+        <div class="settings-label">
+          Cỡ chữ <span id="fontSizeDisplay">18px</span>
+        </div>
+        <input
+          type="range"
+          class="settings-slider"
+          id="fontSizeSlider"
+          min="14"
+          max="24"
+          value="18"
+          step="1"
+        />
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">
+          Giãn dòng <span id="lineHeightDisplay">1.85</span>
+        </div>
+        <input
+          type="range"
+          class="settings-slider"
+          id="lineHeightSlider"
+          min="1.4"
+          max="2.2"
+          value="1.85"
+          step="0.05"
+        />
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">Nền trang</div>
+        <div class="theme-buttons">
+          <button class="theme-btn active" data-theme="light">Sáng</button>
+          <button class="theme-btn sepia" data-theme="sepia">Sepia</button>
+          <button class="theme-btn dark" data-theme="dark">Tối</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Reading Content -->
+    <main class="reader-main">
+      <div class="reader-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+          <div class="chapter-book-name">Cam tâm thuần phục</div>
+          <div class="chapter-number-label"></div>
+          <h1 class="chapter-title">Chương 1</h1>
+        </header>
+
+        <!-- Chapter Body -->
+        <div class="chapter-body">
+          <p>
+            Chiếc xe chầm chậm leo lên đỉnh núi theo con đường quanh co uốn
+            lượn. Bên ngoài cửa sổ là những bụi cây xanh um tùm, thỉnh thoảng
+            trong rừng lại vang lên tiếng chim lạ không rõ tên.
+          </p>
+
+          <p>
+            Kiều Di Nhiễm nhìn ra ngoài cửa sổ, ghi nhớ những âm thanh ấy trong
+            lòng. Bất chợt nảy ra chút linh cảm, cô liền lấy sổ tay ra viết viết
+            vẽ vẽ.
+          </p>
+
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Đường núi gập ghềnh, trong đoàn chương trình đã có người bị say
+            xe.Sau khi ghi lại xong ý tưởng, Kiều Di Nhiễm cũng bắt đầu cảm thấy
+            hơi khó chịu.
+          </p>
+
+          <p>
+            Người đồng nghiệp ngồi bên cạnh quan tâm hỏi:“Chị có thuốc chống say
+            xe, em có muốn uống một chút không?”
+          </p>
+
+          <p>Kiều Di Nhiễm lắc đầu:“Cũng sắp tới rồi. Em chịu được.”</p>
+
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Uống quá nhiều thuốc chống say xe không tốt, đó là điều Ôn Trĩ Diên
+            từng nói.
+          </p>
+
+          <p>
+            Anh còn nói, say xe là một dạng “bệnh”, không thể chữa khỏi hoàn
+            toàn… nhưng có thể vượt qua.
+          </p>
+
+          <p>
+            Thực ra, Kiều Di Nhiễm không phải là người dễ say xe, chỉ khi cơ thể
+            và tinh thần không thoải mái mới bị say xe, mà một khi đã say thì sẽ
+            rất khó chịu, sắc mặt tái nhợt, là kiểu còn toát mồ hôi lạnh.
+          </p>
+
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Lúc này, sau lưng Kiều Di Nhiễm đã bắt đầu đổ mồ hôi, trên trán cũng
+            lấm tấm những giọt mồ hôi nhỏ dày đặc.
+          </p>
+
+          <p>
+            “Hay là vẫn uống một chút đi?” đồng nghiệp đưa cho Kiều Di Nhiễm một
+            chai nước, sắc mặt cô trắng đến mức có phần đáng sợ.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+          <p>
+            Kiều Di Nhiễm vẫn lắc đầu, từ trong túi lấy ra một hộp dầu bạc hà.
+          </p>
+          <p>
+            Ngửi dầu bạc hà để giảm triệu chứng say xe, cũng là cách Ôn Trĩ Diên
+            từng nói.
+          </p>
+          <p>
+            Lần đầu tiên Kiều Di Nhiễm biết đến thứ như dầu bạc hà này, là do Ôn
+            Trĩ Diên tặng cho cô, khi đó họ vẫn còn đang học cấp ba, quan hệ
+            cũng không gần như bây giờ.
+          </p>
+          <p>
+            Mùi mát lạnh của dầu bạc hà xộc vào khoang mũi, Kiều Di Nhiễm lập
+            tức cảm thấy dễ chịu hơn nhiều, cô không nhịn được lại hít sâu thêm
+            một hơi.
+          </p>
+          <p>Lúc này có điện thoại gọi đến.</p>
+          <p>
+            Kiều Di Nhiễm bắt máy, đầu bên kia truyền đến giọng nói bình ổn của
+            Ôn Trĩ Diên: “Đường núi không dễ đi, em say xe có nghiêm trọng
+            không?”
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            “Không nghiêm trọng lắm.” Kiều Di Nhiễm cầm hộp dầu bạc hà lắc lắc
+            trước chóp mũi, may mà hôm qua Ôn Trĩ Diên mua cho cô, lúc này rất
+            hữu dụng.
+          </p>
+          <p>Ôn Trĩ Diên lại hỏi:“Chăn có mang không?”</p>
+          <p>
+            “Mang rồi.” Kiều Di Nhiễm ngẩng đầu nhìn bầu trời trong trẻo, trời
+            xanh mây trắng rất đẹp.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Dự báo thời tiết nói sẽ có mưa, nhưng lúc này thời tiết lại rất tốt.
+          </p>
+          <p>“Chú ý an toàn. Trong núi không giống trong thành phố.”</p>
+          <p>“Ừm.” Kiều Di Nhiễm không quen bị người khác lải nhải.</p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>“Xuống núi anh tới đón em.”</p>
+          <p>“Không cần.” Kiều Di Nhiễm lập tức từ chối, “Tôi…”</p>
+          <p>Quan hệ của chúng ta hình như cũng chưa hòa hoãn đến mức đó.</p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Câu nói này suýt nữa đã buột miệng thốt ra, nhưng cuối cùng cô không
+            còn là thiếu niên có thể nghĩ gì nói nấy nữa, cô dùng lý trí của
+            người trưởng thành đổi lời, nói một cách hàm súc mà lại lịch sự:“Tôi
+            về khách sạn cùng đoàn chương trình là được, rất tiện. Anh cũng khá
+            bận, vi phạm kỷ luật là chuyện lớn.”
+          </p>
+          <p>“Anh có thể sắp xếp.” Ôn Trĩ Diên nói xong liền cúp máy.</p>
+          <p>
+            Đồng nghiệp lập tức tò mò:“Kiều Di Nhiễm, em không phải người địa
+            phương à? Mới đến đây có mấy ngày mà đã có bạn trai rồi?”
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>“Không phải.” Kiều Di Nhiễm trả lời.</p>
+          <p>
+            “Ai nói Kiều tài nữ không phải người địa phương?” Khi đạo diễn của
+            đoàn chương trình mời Kiều Di Nhiễm hợp tác, đã tìm hiểu trước, tự
+            nhiên biết một số tình hình của cô.
+          </p>
+          <p>
+            Khi mới đến Tần Thành, đạo diễn lo lắng cho sự an toàn của mọi
+            người, nhấn mạnh mọi người tốt nhất không nên hành động một mình,
+            nếu muốn đi riêng thì phải nói với tổ.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Trở về quê hương, tụ họp với gia đình hoặc bạn bè chắc chắn là việc
+            phải làm.
+          </p>
+          <p>
+            Nhưng đã nhiều ngày trôi qua, ngoài địa điểm làm việc và khách sạn,
+            Kiều Di Nhiễm dường như không đi đâu cả.
+          </p>
+          <p>
+            Lúc này nhân cơ hội nói chuyện, đạo diễn không khỏi tò mò:“Đã về
+            rồi, sao Kiều tài nữ không về nhà thăm? Bạn học bạn bè của em chắc
+            cũng nhớ em rồi, nếu em muốn đi, với điều kiện sắp xếp tốt công
+            việc, tôi nhất định cho nghỉ.”
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>“Công việc quan trọng.” Kiều Di Nhiễm không muốn nói thêm.</p>
+          <p>
+            “Xem đi.” đạo diễn rất hài lòng với câu trả lời của Kiều Di Nhiễm,
+            “Thế nào gọi là chuyên nghiệp? Đây chính là chuyên nghiệp!”
+          </p>
+          <p>
+            “Đạo diễn, ngài nói vậy là bảo chúng tôi không chuyên nghiệp sao?”
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>“Đúng đó, đạo diễn thiên vị quá rồi!”</p>
+          <p>
+            “Đạo diễn, lời này của ngài khiến chúng tôi có chút tổn thương đó
+            nha!”
+          </p>
+          <p>
+            Các thành viên trong tổ chương trình đùa giỡn với đạo diễn, người
+            một câu, người một câu, Kiều Di Nhiễm không chen vào được, mà vừa
+            hay cô cũng không muốn nói chuyện lắm, nên lại quay đầu nhìn ra
+            ngoài cửa sổ.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Câu hỏi vừa rồi của đạo diễn khiến Kiều Di Nhiễm lại nhớ đến nghi
+            vấn trong lòng—
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Lần này cô trở về, không nói với bất kỳ ai, nhưng vừa xuống máy bay,
+            cô đã nhìn thấy Ôn Trĩ Diên.
+          </p>
+          <p>
+            Ôn Trĩ Diên nói:“Anh đến đón em. Kiều Di Nhiễm, chào mừng em về
+            nước.”
+          </p>
+          <p>
+            Với mối quan hệ trước đây của hai người, Kiều Di Nhiễm thế nào cũng
+            không ngờ Ôn Trĩ Diên sẽ đến đón mình, dù sao trước kia cô đã từng
+            ghét anh như vậy, trong lòng cô anh giống như một kẻ địch, có lúc
+            lại giống như một kẻ thù.
+          </p>
+          <p>
+            Hơn nữa, anh làm sao biết cô đã trở về? Lại còn biết cả chuyến bay
+            cô đi?
+          </p>
+          <p>Đây không phải là trùng hợp, Kiều Di Nhiễm rất rõ.</p>
+          <p>Nhưng khi cô hỏi anh, anh lại không chịu nói gì.</p>
+          <p>Tại sao anh lại làm vậy?</p>
+          <p>Kiều Di Nhiễm không hiểu, cũng không nghĩ thông.</p>
+          <p>
+            Người trong tổ chương trình bay đến từ khắp nơi, Kiều Di Nhiễm không
+            có bạn đồng hành, cuối cùng vẫn lên xe của Ôn Trĩ Diên.
+          </p>
+          <p>
+            Mặc dù anh là người mà cô từng ghét nhất, nhưng sau khi phiêu bạt
+            nơi đất khách lâu như vậy, trở về nước lại có người chuyên đến đón
+            mình, Kiều Di Nhiễm không thể từ chối.
+          </p>
+          <p>
+            Hai người ở ngoài ăn một bữa đơn giản, Ôn Trĩ Diên lại đưa Kiều Di
+            Nhiễm đến khách sạn.
+          </p>
+          <p>Cả quãng đường, hai người gần như không có giao lưu gì.</p>
+          <p>
+            Thỉnh thoảng nói vài câu, cũng đều là những chuyện liên quan đến
+            tình huống trước mắt, ví dụ như có muốn uống nước không, có muốn mở
+            cửa sổ xe không, v.v.
+          </p>
+          <p>
+            Đến khách sạn, Kiều Di Nhiễm nói lời cảm ơn với Ôn Trĩ Diên: “Cảm ơn
+            anh hôm nay đã đến đón tôi.”
+          </p>
+          <p>“Có thể đòi một chút ‘cảm ơn thực tế’ không?”</p>
+          <p>
+            Ôn Trĩ Diên mặc một bộ đồ đen rất thoải mái, là một thương hiệu rất
+            bình thường, nhưng ở trên người anh lại toát ra cảm giác rất sang
+            trọng.
+          </p>
+          <p>
+            “Anh muốn gì? Tôi không có nhiều tiền.” Kiều Di Nhiễm nói, từ thời
+            cấp ba Ôn Trĩ Diên đã khí chất nổi bật, mặc gì cũng đẹp, khiến toàn
+            bộ nữ sinh trong trường phát cuồng, ngoại trừ cô.
+          </p>
+          <p>“Ngày mai cùng ăn tối nhé?”</p>
+          <p>
+            “Lần này tôi về là để làm việc.” Kiều Di Nhiễm nhiều nhất chỉ ở lại
+            một tháng, sau đó lại phải bay đi, rồi tiếp tục phiêu bạt khắp nơi,
+            cô không muốn có quá nhiều liên hệ với tất cả mọi thứ ở đây.
+          </p>
+          <p>Đối với Tần Thành, Kiều Di Nhiễm không có ký ức tốt đẹp nào.</p>
+          <p>
+            Dù theo thời gian, cô đã trở nên đủ mạnh mẽ, nhưng cô vẫn không muốn
+            quay lại đối mặt với nơi này.
+          </p>
+          <p>
+            “Anh sẽ gọi cho em.” Ôn Trĩ Diên không cho Kiều Di Nhiễm thêm cơ hội
+            từ chối.
+          </p>
+          <p>
+            “Con người anh sao lúc nào cũng cố chấp như vậy?” Kiều Di Nhiễm có
+            chút bất lực.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Khi còn ở nước ngoài, vì một lần nghe nhầm điện thoại, Ôn Trĩ Diên
+            đã liên lạc được với cô.
+          </p>
+          <p>
+            Từ đó trở đi, cho dù cô có tìm mọi cách chặn số, xóa liên lạc, anh
+            vẫn luôn có cách gọi được cho cô.
+          </p>
+          <p>
+            Về sau, có lẽ vì anh quá kiên trì, cô mệt mỏi vì phải đối phó, nên
+            không chặn nữa, mặc cho anh gọi đến, chỉ là cô không nghe máy.
+          </p>
+          <p>
+            Nhưng dù bị lạnh nhạt như vậy, điện thoại của Ôn Trĩ Diên vẫn chưa
+            từng gián đoạn, anh còn nhắn tin nhắc cô chú ý an toàn, có lúc là
+            trời mưa nhớ mang ô khi ra ngoài, có lúc là trời lạnh nhớ mặc thêm
+            áo, có lúc hỏi việc học của cô có thuận lợi không…
+          </p>
+          <p>
+            Tuy chỉ là những câu rất đơn giản, nhưng cứ cách vài ngày, anh lại
+            gửi một lần, chưa từng gián đoạn.
+          </p>
+          <p>
+            Sự cố chấp của Ôn Trĩ Diên khiến Kiều Di Nhiễm cảm thấy bản thân
+            mình rất ấu trĩ.
+          </p>
+          <p>Anh thật sự là kẻ địch của cô sao? Đáp án đương nhiên là không.</p>
+          <p>Vậy anh thật sự là kẻ thù của cô sao? Đáp án cũng là không.</p>
+          <p>
+            Vậy tại sao trong lòng cô lại chất chứa nhiều oán hận và trách móc
+            đối với anh như vậy?
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Những trò trẻ con, sự tùy hứng của trẻ con đó… có phải nên thu lại
+            rồi không?
+          </p>
+          <p>
+            Kiều Di Nhiễm nhớ lần đầu tiên mình trả lời tin nhắn của Ôn Trĩ
+            Diên, là khi anh nói với cô:
+          </p>
+          <p>
+            “Anh đã mua loại dầu bạc hà trước đây rồi, cho anh địa chỉ của em.”
+          </p>
+          <p>“Tôi không say xe.”Đó là câu trả lời của Kiều Di Nhiễm.</p>
+          <p>
+            Cuộc đối thoại dừng lại tại đây, qua rất nhiều ngày sau, Kiều Di
+            Nhiễm mới nhận được tin nhắn tiếp theo của Ôn Trĩ Diên.
+          </p>
+          <p>
+            Anh nói:“Xin lỗi. Anh đi làm nhiệm vụ. Lần này tình huống nguy cấp,
+            trước khi xuất phát, tất cả mọi người đều viết di thư.”
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Kiều Di Nhiễm sợ nhất là nghe đến cái chết, cô không khỏi thắt lòng,
+            hỏi anh: “Bây giờ đã an toàn chưa?”
+          </p>
+          <p>Ôn Trĩ Diên không trả lời, trực tiếp gọi điện tới.</p>
+          <p>
+            Kiều Di Nhiễm không từ chối nữa, cô nhận điện thoại, lại hỏi một lần
+            nữa: “Bây giờ có phải đã an toàn rồi không?”
+          </p>
+          <p>
+            “Ừm.” Ôn Trĩ Diên đáp một tiếng, trong câu trả lời còn mang theo
+            tiếng cười sáng sủa.
+          </p>
+          <p>
+            Kiều Di Nhiễm bỗng nhận ra, từ sau khi ra nước ngoài, cô hoàn toàn
+            không biết gì về tất cả mọi chuyện của Ôn Trĩ Diên, liền hỏi:“Không
+            phải anh vào công ty gia đình rồi sao? Sao lại đi làm nhiệm vụ? Sao
+            còn phải viết di thư?”
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>“Anh nên trả lời câu hỏi nào trước?”</p>
+          <p>
+            “Anh đừng đùa.” Trong đầu Kiều Di Nhiễm hiện lên vô số cảnh trong
+            phim trinh thám, “Anh không phải đang làm chuyện gì phạm pháp đó
+            chứ?”
+          </p>
+          <p>
+            Ôn Trĩ Diên nghe ra được, ý ngầm của Kiều Di Nhiễm chính là “anh
+            đừng liên lụy đến tôi.”
+          </p>
+          <p>
+            “Em đang nghĩ gì vậy?” Anh rất muốn gõ nhẹ vào đầu cô một cái, tiếc
+            là người ở nước ngoài, khoảng cách thực sự quá xa.
+          </p>
+          <p>
+            “Tôi là lính cứu hỏa.” Ôn Trĩ Diên tiếp tục nói, “Lần này là đi
+            chống lũ cứu nạn.”
+          </p>
+          <p>
+            “…Vậy thì rất nguy hiểm.” Kiều Di Nhiễm có chút ngượng ngùng, quả
+            nhiên là do tầm nhìn của cô quá hạn hẹp.
+          </p>
+          <p>
+            “Có biết tôi viết gì trong di thư không?” Ôn Trĩ Diên chậm rãi tự
+            hỏi rồi tự trả lời, “Kiếp sau chúng ta gặp lại.”
+          </p>
+          <p>
+            Trong lòng Kiều Di Nhiễm thắt lại, đây là lần đầu tiên trong đời cô
+            nghe người khác đọc di thư của mình, hơn nữa chỉ có một câu.
+          </p>
+          <p>Nhưng chính câu nói đơn giản ấy, lại cứ như vậy đâm vào tim cô.</p>
+          <p>
+            “Có thể trước khi rời đi, nói một lời tạm biệt đàng hoàng, tôi đã
+            không còn gì nuối tiếc nữa.” Giọng của Ôn Trĩ Diên truyền đến từ đầu
+            bên kia.
+          </p>
+          <p>
+            Kiều Di Nhiễm đã sớm khóc không thành tiếng, đương nhiên không phải
+            vì Ôn Trĩ Diên.
+          </p>
+          <p>
+            Cô che miệng, cố nén tiếng khóc, Kiều Di Nhiễm cúp máy, lời Ôn Trĩ
+            Diên nói không sai—
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Nếu trước khi rời đi, có thể nói một lời tạm biệt tử tế, thì tốt
+            biết bao…
+          </p>
+          <p>
+            Người trong tổ chương trình toàn bộ đều bước vào trạng thái làm
+            việc.
+          </p>
+          <p>
+            Nhiệm vụ của Kiều Di Nhiễm rất đơn giản, tham gia xuyên suốt, tìm
+            kiếm linh cảm, viết ca khúc chủ đề và ca khúc tuyên truyền cho
+            chương trình mới này.
+          </p>
+          <p>
+            Vì vậy, khi người khác bận đến mức quay cuồng, chỉ có Kiều Di Nhiễm
+            đi qua đi lại rảnh rỗi chán chường, lâu dần cô tự giác gia nhập công
+            việc hậu cần.
+          </p>
+          <p>
+            Tổ hậu cần quyết định đi hái một ít quả dại để nếm thử, liền hỏi
+            Kiều Di Nhiễm người ngoài biên chế:“Kiều tài nữ, đi không? Mấy anh
+            dẫn em trải nghiệm sinh tồn nơi hoang dã.”
+          </p>
+          <p>
+            Đây là một chương trình chủ đề bảo vệ môi trường, thông qua phổ cập
+            kiến thức sinh học, kêu gọi mọi người bảo vệ hệ sinh thái.
+          </p>
+          <p>
+            Mỗi tập chương trình sẽ chọn một quốc gia hoặc thành phố khác nhau,
+            những nơi này có loài nguy cấp,có sinh vật quan trọng.
+          </p>
+          <p>
+            Mặc dù đây là lần ghi hình đầu tiên, nhưng trong tổ có chuyên gia
+            hướng dẫn, nên họ biết loại quả dại nào có thể ăn, không vi phạm
+            pháp luật cũng không bị ngộ độc.
+          </p>
+          <p>
+            Đồng nghiệp nói trải nghiệm sinh tồn hoang dã, thật ra cũng không hề
+            quá lời, dù sao những nơi họ đến đều là vùng hoang vu, rừng sâu núi
+            thẳm.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>Quả dại rất ngon, nhưng công việc cũng rất vất vả.</p>
+          <p>
+            Tất cả mọi người mang theo máy móc, đi bộ trong rừng núi không có
+            đường, tiếng động vật lúc trong trẻo lúc quái dị, tiếng nước chảy
+            róc rách, tiếng gió thổi qua lá cây xào xạc không ngừng bên tai.
+          </p>
+          <p>Phong Đông Nịnh hỏi Kiều Di Nhiễm:“Có sợ không?”</p>
+          <p>
+            “Nói thật, có một chút.” Kiều Di Nhiễm lần đầu trải qua những việc
+            này, tự nhiên không thể so với Phong Đông Nịnh bọn họ.
+          </p>
+          <p>
+            Phong Đông Nịnh là chuyên gia hướng dẫn được mời trong tổ, cô là
+            giáo sư của phòng thí nghiệm trọng điểm về sinh thái và bảo vệ môi
+            trường động thực vật quý hiếm nguy cấp, đừng nhìn mới 30 tuổi, nhưng
+            kinh nghiệm làm việc vô cùng phong phú, leo núi lội suối tuyệt đối
+            không thua kém nam giới cùng tuổi.
+          </p>
+          <p>
+            “Sợ cũng là chuyện bình thường.” Phong Đông Nịnh uống một ngụm nước,
+            “Năm ngoái tôi có một đồng nghiệp vào núi, bị rắn cắn, mất một
+            chân.”
+          </p>
+          <p>“Bị cắt cụt rồi?”</p>
+          <p>
+            “Ừm. Như vậy đã là nhẹ rồi.” Phong Đông Nịnh nói,“Tôi cũng là người
+            sống lại lần thứ hai.”
+          </p>
+          <p>
+            “Nghe nói lúc hướng dẫn Phong gặp chuyện cũng là ở ngọn núi này?”
+            đạo diễn chen vào một câu.
+          </p>
+          <p>
+            “Xem ra đã tìm hiểu về tôi rồi nhỉ.” Phong Đông Nịnh cười nhẹ như
+            mây gió,“May mà có đội cứu hộ Tần Thành, nếu không sao tôi có thể
+            sống tốt đến hôm nay.”
+          </p>
+          <p>
+            Trong lúc nói chuyện, những tia nắng lấp lánh xuyên qua khe rừng đột
+            nhiên biến mất.
+          </p>
+          <div class="chapter-divider">✦ ✦ ✦</div>
+
+          <p>
+            Cơn mưa lớn ập đến bất ngờ, không cho người ta một chút thời gian
+            thở dốc.
+          </p>
+          <p>
+            Mọi người bắt đầu tìm chỗ tránh mưa, những thiết bị kia cũng rất quý
+            giá, không thể để dính mưa.
+          </p>
+          <p>
+            Trong lúc hỗn loạn, người dân địa phương dẫn đường bỗng trượt chân,
+            mắt thấy sắp rơi xuống đáy vực.
+          </p>
+          <p>
+            Mọi người luống cuống kéo một hồi, người dân thì được kéo lên rồi,
+            nhưng Kiều Di Nhiễm lại trượt xuống dưới.
+          </p>
+        </div>
+
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav" aria-label="Điều hướng chương">
+          <div>
+            <!-- No previous chapter -->
+            <span
+              style="
+                font-family: var(--font-ui);
+                font-size: 0.78rem;
+                color: var(--reader-mute);
+                font-style: italic;
+              "
+              >Đây là chương đầu tiên</span
+            >
+          </div>
+
+          <div class="chapter-nav-home">
+            <a href="index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+              <span>Mục lục sách</span>
+            </a>
+          </div>
+
+          <a href="chapter2.html" class="chapter-nav-link next">
+            <div style="text-align: right">
+              <span class="chapter-nav-label">Chương tiếp</span>
+              <span class="chapter-nav-title">Những bức thư không gửi đi</span>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </main>
+
+    <script src="../../assets/scripts/reader.js"></script>
+  </body>
 </html>

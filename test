@@ -1,0 +1,175 @@
+<!-- Book 2 -->
+<article class="book-card fade-in" data-delay="0.1" data-category="completed">
+  <div class="book-card-cover">
+    <a href="books/nha-gia-kim/index.html">
+      <div
+        class="book-card-cover-art"
+        style="
+          background: linear-gradient(
+            160deg,
+            #f5d4a8 0%,
+            #d4a060 55%,
+            #8a5820 100%
+          );
+        "
+      >
+        <div class="book-cover-spine"></div>
+        <div class="book-cover-text">
+          <div class="book-cover-title">Nhà Giả Kim</div>
+          <div class="book-cover-author-small">Paulo Coelho</div>
+        </div>
+      </div>
+    </a>
+    <span class="book-card-badge badge-completed">Hoàn thành</span>
+  </div>
+  <div class="book-card-body">
+    <h3 class="book-card-title">Nhà Giả Kim</h3>
+    <div class="book-card-meta">
+      <span class="book-card-author">Paulo Coelho</span>
+      <span class="book-card-translator">Dịch: Nhóm ĐVQ</span>
+    </div>
+    <p class="book-card-desc">
+      Hành trình tìm kiếm vận mệnh cá nhân của chàng trai chăn cừu Santiago —
+      một cuốn sách truyền cảm hứng mọi thế hệ.
+    </p>
+    <div class="book-card-footer">
+      <span class="book-chapters-count">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="13"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+          />
+          <polyline points="14 2 14 8 20 8" />
+        </svg>
+        2 chương
+      </span>
+      <a href="books/nha-gia-kim/index.html" class="btn btn-sm btn-primary"
+        >Đọc tiếp</a
+      >
+    </div>
+  </div>
+</article>
+
+<!-- Book 3 -->
+<article class="book-card fade-in" data-delay="0.15" data-category="completed">
+  <div class="book-card-cover">
+    <a href="books/hoang-tu-be/index.html">
+      <div
+        class="book-card-cover-art"
+        style="
+          background: linear-gradient(
+            160deg,
+            #a8c8e8 0%,
+            #5890c4 55%,
+            #2a5a90 100%
+          );
+        "
+      >
+        <div class="book-cover-spine"></div>
+        <div class="book-cover-text">
+          <div class="book-cover-title">Hoàng Tử Bé</div>
+          <div class="book-cover-author-small">Antoine de Saint-Exupéry</div>
+        </div>
+      </div>
+    </a>
+    <span class="book-card-badge badge-completed">Hoàn thành</span>
+  </div>
+  <div class="book-card-body">
+    <h3 class="book-card-title">Hoàng Tử Bé</h3>
+    <div class="book-card-meta">
+      <span class="book-card-author">Antoine de Saint-Exupéry</span>
+      <span class="book-card-translator">Dịch: Nhóm ĐVQ</span>
+    </div>
+    <p class="book-card-desc">
+      Những điều quan trọng nhất không thể nhìn thấy bằng mắt thường — bài học
+      từ hoàng tử đến từ một hành tinh nhỏ.
+    </p>
+    <div class="book-card-footer">
+      <span class="book-chapters-count">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="13"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+          />
+          <polyline points="14 2 14 8 20 8" />
+        </svg>
+        1 chương
+      </span>
+      <a href="books/hoang-tu-be/index.html" class="btn btn-sm btn-primary"
+        >Đọc tiếp</a
+      >
+    </div>
+  </div>
+</article>
+
+<article class="book-card fade-in" data-delay="0.2" data-category="ongoing">
+  <div class="book-card-cover">
+    <a href="books/tram-nam-co-don/index.html">
+      <div
+        class="book-card-cover-art"
+        style="
+          background: linear-gradient(
+            160deg,
+            #c8a8d8 0%,
+            #9060b8 55%,
+            #502880 100%
+          );
+        "
+      >
+        <div class="book-cover-spine"></div>
+        <div class="book-cover-text">
+          <div class="book-cover-title">Trăm Năm Cô Đơn</div>
+          <div class="book-cover-author-small">Dạng Dạng Mia</div>
+        </div>
+      </div>
+    </a>
+    <span class="book-card-badge badge-new">Mới</span>
+  </div>
+  <div class="book-card-body">
+    <h3 class="book-card-title">Trăm Năm Cô Đơn</h3>
+    <div class="book-card-meta">
+      <span class="book-card-author">Dạng Dạng Mia</span>
+      <span class="book-card-translator">Dịch: Nhóm ĐVQ</span>
+    </div>
+    <p class="book-card-desc">
+      Câu chuyện sử thi về bảy thế hệ của gia tộc Buendía trong thị trấn Macondo
+      huyền bí và hoang vắng.
+    </p>
+    <div class="book-card-footer">
+      <span class="book-chapters-count">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="13"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+          />
+          <polyline points="14 2 14 8 20 8" />
+        </svg>
+        1 chương
+      </span>
+      <a href="books/tram-nam-co-don/index.html" class="btn btn-sm btn-primary"
+        >Đọc tiếp</a
+      >
+    </div>
+  </div>
+</article>

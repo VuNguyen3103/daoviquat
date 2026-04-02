@@ -4,45 +4,45 @@
    ============================================================ */
 
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap");
 
 /* ============================================================
    CSS CUSTOM PROPERTIES
    ============================================================ */
 :root {
   /* Pink Palette */
-  --pink-50:  #FFF5F8;
-  --pink-100: #FFE8F0;
-  --pink-200: #F9D4E2;
-  --pink-300: #F2B5CC;
-  --pink-400: #E88FAF;
-  --pink-500: #D4698F;
-  --pink-600: #B84E75;
-  --pink-700: #8E3258;
-  --rose:     #C4647A;
-  --rose-dark:#9A3F57;
+  --pink-50: #fff5f8;
+  --pink-100: #ffe8f0;
+  --pink-200: #f9d4e2;
+  --pink-300: #f2b5cc;
+  --pink-400: #e88faf;
+  --pink-500: #d4698f;
+  --pink-600: #b84e75;
+  --pink-700: #8e3258;
+  --rose: #c4647a;
+  --rose-dark: #9a3f57;
 
   /* Neutral Palette */
-  --cream:    #FDF8F5;
-  --beige:    #F5EDE6;
-  --warm-100: #EDE0D8;
-  --warm-200: #D4C5BA;
-  --text-dark:#1E0F0A;
-  --text-mid: #4A3028;
-  --text-soft:#8A7068;
-  --text-mute:#B8A8A0;
+  --cream: #fdf8f5;
+  --beige: #f5ede6;
+  --warm-100: #ede0d8;
+  --warm-200: #d4c5ba;
+  --text-dark: #1e0f0a;
+  --text-mid: #4a3028;
+  --text-soft: #8a7068;
+  --text-mute: #b8a8a0;
 
   /* Typography */
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-body:  'Lora', Georgia, serif;
-  --font-ui:    'DM Sans', system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-body: "Lora", Georgia, serif;
+  --font-ui: "DM Sans", system-ui, sans-serif;
 
   /* Spacing */
-  --space-xs:  0.25rem;
-  --space-sm:  0.5rem;
-  --space-md:  1rem;
-  --space-lg:  1.5rem;
-  --space-xl:  2rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
   --space-4xl: 6rem;
@@ -54,10 +54,10 @@
   --radius-xl: 32px;
 
   /* Shadows */
-  --shadow-sm:  0 2px 8px rgba(196, 100, 122, 0.08);
-  --shadow-md:  0 4px 20px rgba(196, 100, 122, 0.12);
-  --shadow-lg:  0 8px 40px rgba(196, 100, 122, 0.16);
-  --shadow-xl:  0 16px 64px rgba(196, 100, 122, 0.20);
+  --shadow-sm: 0 2px 8px rgba(196, 100, 122, 0.08);
+  --shadow-md: 0 4px 20px rgba(196, 100, 122, 0.12);
+  --shadow-lg: 0 8px 40px rgba(196, 100, 122, 0.16);
+  --shadow-xl: 0 16px 64px rgba(196, 100, 122, 0.2);
 
   /* Transitions */
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,7 +67,9 @@
 /* ============================================================
    RESET & BASE
    ============================================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -99,7 +101,9 @@ a {
   text-decoration: none;
 }
 
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
 button {
   cursor: pointer;
@@ -177,7 +181,7 @@ button {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -220,7 +224,10 @@ button {
   font-size: 0.85rem;
   color: var(--text-dark);
   width: 200px;
-  transition: border-color 0.25s, box-shadow 0.25s, width 0.3s var(--ease-smooth);
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s,
+    width 0.3s var(--ease-smooth);
   outline: none;
 }
 
@@ -282,9 +289,17 @@ button {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 70% at 60% 40%, rgba(249, 212, 226, 0.5) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 60% at 10% 80%, rgba(242, 181, 204, 0.3) 0%, transparent 60%),
-    linear-gradient(160deg, #FFF5F8 0%, #FDF3F0 50%, #FFF8F5 100%);
+    radial-gradient(
+      ellipse 80% 70% at 60% 40%,
+      rgba(249, 212, 226, 0.5) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 60% at 10% 80%,
+      rgba(242, 181, 204, 0.3) 0%,
+      transparent 60%
+    ),
+    linear-gradient(160deg, #fff5f8 0%, #fdf3f0 50%, #fff8f5 100%);
 }
 
 /* Decorative petals */
@@ -295,17 +310,68 @@ button {
   animation: floatPetal linear infinite;
 }
 
-.petal-1 { width: 120px; height: 120px; top: 15%; right: 15%; background: var(--pink-300); animation-duration: 18s; animation-delay: 0s; }
-.petal-2 { width: 80px; height: 80px; top: 60%; right: 8%; background: var(--rose); animation-duration: 22s; animation-delay: -5s; transform: rotate(45deg); }
-.petal-3 { width: 160px; height: 160px; top: 20%; right: 35%; background: var(--pink-200); animation-duration: 26s; animation-delay: -10s; transform: rotate(90deg); }
-.petal-4 { width: 60px; height: 60px; top: 70%; left: 5%; background: var(--pink-400); animation-duration: 20s; animation-delay: -8s; }
-.petal-5 { width: 100px; height: 100px; top: 35%; right: 5%; background: var(--pink-300); animation-duration: 30s; animation-delay: -15s; transform: rotate(135deg); }
+.petal-1 {
+  width: 120px;
+  height: 120px;
+  top: 15%;
+  right: 15%;
+  background: var(--pink-300);
+  animation-duration: 18s;
+  animation-delay: 0s;
+}
+.petal-2 {
+  width: 80px;
+  height: 80px;
+  top: 60%;
+  right: 8%;
+  background: var(--rose);
+  animation-duration: 22s;
+  animation-delay: -5s;
+  transform: rotate(45deg);
+}
+.petal-3 {
+  width: 160px;
+  height: 160px;
+  top: 20%;
+  right: 35%;
+  background: var(--pink-200);
+  animation-duration: 26s;
+  animation-delay: -10s;
+  transform: rotate(90deg);
+}
+.petal-4 {
+  width: 60px;
+  height: 60px;
+  top: 70%;
+  left: 5%;
+  background: var(--pink-400);
+  animation-duration: 20s;
+  animation-delay: -8s;
+}
+.petal-5 {
+  width: 100px;
+  height: 100px;
+  top: 35%;
+  right: 5%;
+  background: var(--pink-300);
+  animation-duration: 30s;
+  animation-delay: -15s;
+  transform: rotate(135deg);
+}
 
 @keyframes floatPetal {
-  0%   { transform: translateY(0) rotate(0deg); }
-  33%  { transform: translateY(-20px) rotate(120deg); }
-  66%  { transform: translateY(10px) rotate(240deg); }
-  100% { transform: translateY(0) rotate(360deg); }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(10px) rotate(240deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
 }
 
 /* Decorative circle */
@@ -317,7 +383,12 @@ button {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--pink-200) 0%, var(--pink-300) 50%, var(--pink-400) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--pink-200) 0%,
+    var(--pink-300) 50%,
+    var(--pink-400) 100%
+  );
   opacity: 0.18;
   filter: blur(2px);
 }
@@ -331,8 +402,14 @@ button {
 }
 
 @keyframes heroFadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-eyebrow {
@@ -445,7 +522,9 @@ button {
   width: 200px;
   height: 280px;
   border-radius: 4px 12px 12px 4px;
-  box-shadow: var(--shadow-xl), 8px 8px 0 rgba(196, 100, 122, 0.15);
+  box-shadow:
+    var(--shadow-xl),
+    8px 8px 0 rgba(196, 100, 122, 0.15);
   overflow: hidden;
   transition: transform 0.4s var(--ease-spring);
 }
@@ -454,7 +533,7 @@ button {
   top: 0;
   left: 40px;
   z-index: 3;
-  background: linear-gradient(160deg, #E8A0B8 0%, #C46888 50%, #9A3F58 100%);
+  background: linear-gradient(160deg, #e8a0b8 0%, #c46888 50%, #9a3f58 100%);
   transform: rotate(-3deg);
 }
 
@@ -462,7 +541,7 @@ button {
   top: 20px;
   left: 20px;
   z-index: 2;
-  background: linear-gradient(160deg, #F2C4D8 0%, #E88FAF 50%, #C4688A 100%);
+  background: linear-gradient(160deg, #f2c4d8 0%, #e88faf 50%, #c4688a 100%);
   transform: rotate(2deg);
 }
 
@@ -470,7 +549,7 @@ button {
   top: 40px;
   left: 0;
   z-index: 1;
-  background: linear-gradient(160deg, #FAE0EC 0%, #F2B5CC 50%, #E88FAF 100%);
+  background: linear-gradient(160deg, #fae0ec 0%, #f2b5cc 50%, #e88faf 100%);
   transform: rotate(5deg);
 }
 
@@ -484,7 +563,7 @@ button {
   top: 0;
   bottom: 0;
   width: 16px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .book-content {
@@ -506,7 +585,7 @@ button {
 .book-content-author {
   font-family: var(--font-ui);
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -612,7 +691,7 @@ button {
 
 .section-eyebrow::before,
 .section-eyebrow::after {
-  content: '';
+  content: "";
   width: 24px;
   height: 1px;
   background: var(--rose);
@@ -652,7 +731,9 @@ button {
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--pink-100);
-  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s var(--ease-smooth);
+  transition:
+    transform 0.3s var(--ease-spring),
+    box-shadow 0.3s var(--ease-smooth);
   position: relative;
 }
 
@@ -665,6 +746,8 @@ button {
   position: relative;
   aspect-ratio: 3/4;
   overflow: hidden;
+  display: flex;
+  align-items: safe;
 }
 
 .book-card-cover-art {
@@ -687,7 +770,7 @@ button {
   top: 0;
   bottom: 0;
   width: 20px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .book-cover-text {
@@ -701,13 +784,13 @@ button {
   font-size: 1.05rem;
   color: white;
   line-height: 1.3;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .book-cover-author-small {
   font-family: var(--font-ui);
   font-size: 0.65rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-top: 4px;
@@ -726,14 +809,14 @@ button {
 }
 
 .badge-ongoing {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--rose);
   border: 1px solid rgba(196, 100, 122, 0.3);
 }
 
 .badge-completed {
-  background: rgba(255,255,255,0.9);
-  color: #5A8F6A;
+  background: rgba(255, 255, 255, 0.9);
+  color: #5a8f6a;
   border: 1px solid rgba(90, 143, 106, 0.3);
 }
 
@@ -929,7 +1012,8 @@ button {
   height: 100%;
 }
 
-.update-info {}
+.update-info {
+}
 
 .update-book-name {
   font-family: var(--font-serif);
@@ -975,14 +1059,19 @@ button {
    ============================================================ */
 .about-banner {
   padding: var(--space-4xl) var(--space-xl);
-  background: linear-gradient(135deg, var(--rose-dark) 0%, var(--rose) 50%, var(--pink-500) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--rose-dark) 0%,
+    var(--rose) 50%,
+    var(--pink-500) 100%
+  );
   position: relative;
   overflow: hidden;
   text-align: center;
 }
 
 .about-banner::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -1007,7 +1096,7 @@ button {
 .about-banner-text {
   font-family: var(--font-body);
   font-size: 1rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
   font-style: italic;
   margin-bottom: var(--space-xl);
@@ -1032,7 +1121,7 @@ button {
   grid-template-columns: 2fr 1fr 1fr;
   gap: var(--space-3xl);
   padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   margin-bottom: var(--space-xl);
 }
 
@@ -1047,7 +1136,7 @@ button {
 .footer-brand-desc {
   font-family: var(--font-body);
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.7;
   font-style: italic;
   max-width: 280px;
@@ -1059,7 +1148,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: var(--space-lg);
 }
 
@@ -1072,7 +1161,7 @@ button {
 .footer-links a {
   font-family: var(--font-ui);
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   transition: color 0.2s;
 }
 
@@ -1089,7 +1178,7 @@ button {
 .footer-copy {
   font-family: var(--font-ui);
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .footer-copy span {
@@ -1186,7 +1275,7 @@ button {
   top: 0;
   bottom: 0;
   width: 24px;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .detail-cover-title {
@@ -1195,19 +1284,20 @@ button {
   font-size: 1.4rem;
   color: white;
   line-height: 1.25;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   margin-bottom: 8px;
 }
 
 .detail-cover-author {
   font-family: var(--font-ui);
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.book-detail-info {}
+.book-detail-info {
+}
 
 .book-detail-genre {
   display: inline-flex;
@@ -1250,7 +1340,8 @@ button {
   flex-wrap: wrap;
 }
 
-.book-meta-item {}
+.book-meta-item {
+}
 
 .book-meta-label {
   font-family: var(--font-ui);
@@ -1363,7 +1454,9 @@ button {
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
+  transition:
+    opacity 0.6s var(--ease-smooth),
+    transform 0.6s var(--ease-smooth);
 }
 
 .fade-in.visible {
@@ -1375,15 +1468,28 @@ button {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-visual { display: none; }
-  .hero-content { max-width: 100%; }
-  .footer-top { grid-template-columns: 1fr 1fr; }
+  .hero-visual {
+    display: none;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
-  .navbar { padding: 0 var(--space-lg); }
-  .nav-links, .nav-search { display: none; }
-  .nav-toggle { display: flex; }
+  .navbar {
+    padding: 0 var(--space-lg);
+  }
+  .nav-links,
+  .nav-search {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
 
   .nav-links.open {
     display: flex;
@@ -1411,21 +1517,53 @@ button {
     z-index: 999;
   }
 
-  .hero { padding: var(--space-3xl) var(--space-lg); min-height: auto; padding-top: calc(68px + var(--space-2xl)); }
-  .hero-title { font-size: 2.4rem; }
-  .hero-stats { gap: var(--space-xl); }
-  .section { padding: var(--space-3xl) var(--space-lg); }
-  .books-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-lg); }
-  .categories-grid { grid-template-columns: 1fr; }
-  .book-detail-layout { grid-template-columns: 1fr; }
-  .book-detail-cover { max-width: 260px; }
-  .footer-top { grid-template-columns: 1fr; gap: var(--space-xl); }
-  .update-item { grid-template-columns: auto 1fr; }
-  .update-meta { display: none; }
+  .hero {
+    padding: var(--space-3xl) var(--space-lg);
+    min-height: auto;
+    padding-top: calc(68px + var(--space-2xl));
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .hero-stats {
+    gap: var(--space-xl);
+  }
+  .section {
+    padding: var(--space-3xl) var(--space-lg);
+  }
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .book-detail-layout {
+    grid-template-columns: 1fr;
+  }
+  .book-detail-cover {
+    max-width: 260px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  .update-item {
+    grid-template-columns: auto 1fr;
+  }
+  .update-meta {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-  .books-grid { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; }
-  .btn { justify-content: center; }
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .btn {
+    justify-content: center;
+  }
 }
